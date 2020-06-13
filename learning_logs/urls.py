@@ -14,5 +14,8 @@ urlpatterns = [
 
     # 用于添加新主题的网页
     path( 'new_topic/', views.new_topic, name = 'new_topic' ),
+
+    # 用于添加新条目的页面
+    path( 'new_entry/<topic_id>', views.new_entry, name='new_entry' ),
 ]
 app_name = 'learning_logs'
